@@ -11,3 +11,10 @@ composer install
 vendor/bin/drush --yes site:install minimal --existing-config
 vendor/bin/drush user:login
 ```
+
+## Loading fixtures
+
+```sh
+vendor/bin/drush pm:enable custom_fixtures
+vendor/bin/drush content-fixtures:load --yes
+```

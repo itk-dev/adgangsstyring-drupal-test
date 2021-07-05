@@ -1,0 +1,11 @@
+name: 'Fixtures'
+description: Generates fixtures
+package: Custom
+
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+dependencies:
+  - drupal:content_fixtures
+

@@ -15,6 +15,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/content_fixtures": "^2.0",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
