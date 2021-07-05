@@ -7,24 +7,34 @@
     "support": {
         "docs": "https://github.com/itk-dev/adgangsstyring-drupal-test"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        "itk-dev/adgangsstyring_drupal": {
+            "type": "vcs",
+            "url": "https://github.com/itk-dev/adgangsstyring_drupal"
+        },
+        "itk-dev/adgangsstyring": {
+            "type": "vcs",
+            "url": "https://github.com/itk-dev/adgangsstyring"
         }
-    ],
+    },
     "require": {
         "composer/installers": "^1.9",
         "drupal/content_fixtures": "^2.0",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
-        "drush/drush": "^10.5"
+        "drush/drush": "^10.5",
+        "itkdev/adgangsstyring": "dev-develop",
+        "itkdev/adgangsstyring_drupal": "dev-develop"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true

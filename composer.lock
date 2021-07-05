@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "442f39e347a0fb5280bb6775a411a16d",
+    "content-hash": "d1c85d6e57f706995352d721a5bc7596",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2341,6 +2341,103 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.8.2"
             },
             "time": "2021-04-26T09:17:50+00:00"
+        },
+        {
+            "name": "itkdev/adgangsstyring",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/itk-dev/adgangsstyring.git",
+                "reference": "e92bfa20589465fca77217ac69ac31ed83c8002b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/itk-dev/adgangsstyring/zipball/e92bfa20589465fca77217ac69ac31ed83c8002b",
+                "reference": "e92bfa20589465fca77217ac69ac31ed83c8002b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^6.5",
+                "symfony/event-dispatcher": "^4.4 || ^5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ItkDev\\Adgangsstyring\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jekuaitk",
+                    "email": "jekua@aarhus.dk"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/itk-dev/adgangsstyring/tree/develop",
+                "issues": "https://github.com/itk-dev/adgangsstyring/issues"
+            },
+            "time": "2021-07-05T11:43:47+00:00"
+        },
+        {
+            "name": "itkdev/adgangsstyring_drupal",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/itk-dev/adgangsstyring_drupal.git",
+                "reference": "c0bc8852d99b32ca44adec065830203c2d25cd3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/itk-dev/adgangsstyring_drupal/zipball/c0bc8852d99b32ca44adec065830203c2d25cd3d",
+                "reference": "c0bc8852d99b32ca44adec065830203c2d25cd3d",
+                "shasum": ""
+            },
+            "require": {
+                "itkdev/adgangsstyring": "dev-develop"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+                "drupal/coder": "^8.3",
+                "mglaman/drupal-check": "^1.1"
+            },
+            "type": "drupal-module",
+            "scripts": {
+                "coding-standards-check/drupal-check": [
+                    "vendor/bin/drupal-check --deprecations --analysis --exclude-dir=vendor *.* src"
+                ],
+                "coding-standards-check/phpcs": [
+                    "vendor/bin/phpcs --standard=phpcs.xml.dist"
+                ],
+                "coding-standards-check": [
+                    "@coding-standards-check/phpcs",
+                    "@coding-standards-check/drupal-check"
+                ],
+                "coding-standards-apply/phpcs": [
+                    "vendor/bin/phpcbf --standard=phpcs.xml.dist"
+                ],
+                "coding-standards-apply": [
+                    "@coding-standards-apply/phpcs"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Mikkel Ricky",
+                    "email": "rimi@aarhus.dk"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/itk-dev/adgangsstyring_drupal/tree/develop",
+                "issues": "https://github.com/itk-dev/adgangsstyring_drupal/issues"
+            },
+            "time": "2021-07-05T11:35:25+00:00"
         },
         {
             "name": "laminas/laminas-diactoros",
@@ -6411,8 +6508,11 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "itkdev/adgangsstyring": 20,
+        "itkdev/adgangsstyring_drupal": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

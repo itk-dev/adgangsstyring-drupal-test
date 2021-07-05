@@ -15,6 +15,6 @@ vendor/bin/drush user:login
 ## Loading fixtures
 
 ```sh
-vendor/bin/drush pm:enable custom_fixtures
+vendor/bin/drush pm:enable custom_fixtures --yes
 vendor/bin/drush content-fixtures:load --yes
 ```

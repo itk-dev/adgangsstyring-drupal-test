@@ -1,4 +1,5 @@
 module:
+  adgangsstyring: 0
   block: 0
   dblog: 0
   dynamic_page_cache: 0
