@@ -23,6 +23,7 @@
     },
     "require": {
         "composer/installers": "^1.9",
+        "drupal/config_ignore": "^2.3",
         "drupal/content_fixtures": "^2.0",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
