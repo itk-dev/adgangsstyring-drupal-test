@@ -2592,12 +2592,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/itk-dev/adgangsstyring_drupal.git",
-                "reference": "05044fb4c0e4c5e3ab6e3a2313c324d0a99a9384"
+                "reference": "2e5593340915aad9c01d1eb5102dbae56e807345"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/itk-dev/adgangsstyring_drupal/zipball/05044fb4c0e4c5e3ab6e3a2313c324d0a99a9384",
-                "reference": "05044fb4c0e4c5e3ab6e3a2313c324d0a99a9384",
+                "url": "https://api.github.com/repos/itk-dev/adgangsstyring_drupal/zipball/2e5593340915aad9c01d1eb5102dbae56e807345",
+                "reference": "2e5593340915aad9c01d1eb5102dbae56e807345",
                 "shasum": ""
             },
             "require": {
@@ -2637,7 +2637,7 @@
                 "source": "https://github.com/itk-dev/adgangsstyring_drupal/tree/develop",
                 "issues": "https://github.com/itk-dev/adgangsstyring_drupal/issues"
             },
-            "time": "2021-07-06T12:33:05+00:00"
+            "time": "2021-07-06T12:42:41+00:00"
         },
         {
             "name": "laminas/laminas-diactoros",
