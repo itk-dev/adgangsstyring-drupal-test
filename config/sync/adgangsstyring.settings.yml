@@ -1,0 +1,10 @@
+client_id: 'file://settings.local.php#$config[''adgangsstyring.settings''][''client_id'']'
+client_secret: 'file://settings.local.php#$config[''adgangsstyring.settings''][''client_secret'']'
+group_id: 'file://settings.local.php#$config[''adgangsstyring.settings''][''group_id'']'
+tenant_id: 'file://settings.local.php#$config[''adgangsstyring.settings''][''tenant_id'']'
+excluded_users:
+  - '1'
+excluded_roles:
+  administrator: administrator
+  editor: 0
+user_cancel_method: user_cancel_reassign

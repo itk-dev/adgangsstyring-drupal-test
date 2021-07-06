@@ -28,7 +28,6 @@
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
         "drush/drush": "^10.5",
-        "itkdev/adgangsstyring": "dev-develop",
         "itkdev/adgangsstyring_drupal": "dev-develop"
     },
     "conflict": {

@@ -8,11 +8,15 @@ use Drupal\user\Entity\User;
 class UserFixture extends AbstractFixture {
   public function load()
   {
-    User::create([
-      'name' => 'user-87',
-      'mail' => 'user-87@example.com',
-    ])
-      ->activate()
-      ->save();
+    $emails = ['user@aarhus.dk', 'test@aarhus.dk'];
+
+    foreach ($emails as $email) {
+      User::create([
+        'name' => $email,
+        'mail' => $email,
+      ])
+        ->activate()
+        ->save();
+    }
   }
 }
