@@ -7,6 +7,7 @@ module:
   content_fixtures: 0
   custom_fixtures: 0
   dblog: 0
+  drupal_psr6_cache: 0
   dynamic_page_cache: 0
   field: 0
   file: 0
