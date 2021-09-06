@@ -11,14 +11,6 @@
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        "itk-dev/adgangsstyring_drupal": {
-            "type": "vcs",
-            "url": "https://github.com/itk-dev/adgangsstyring_drupal"
-        },
-        "itk-dev/adgangsstyring": {
-            "type": "vcs",
-            "url": "https://github.com/itk-dev/adgangsstyring"
         }
     },
     "require": {
@@ -31,7 +23,7 @@
         "drupal/openid_connect": "^1.1",
         "drupal/samlauth": "^3.3",
         "drush/drush": "^10.5",
-        "itkdev/adgangsstyring_drupal": "dev-develop"
+        "itk-dev/azure_ad_delta_sync": "dev-develop"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -97,5 +89,9 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/core-dev": "^9.2",
+        "phpspec/prophecy-phpunit": "^2"
     }
 }

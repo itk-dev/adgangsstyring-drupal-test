@@ -2,5 +2,7 @@ vendor
 
 web/core
 web/modules/contrib
+web/sites/simpletest
+web/sites/*/files
 web/sites/*/files
 web/sites/*/settings.local.php

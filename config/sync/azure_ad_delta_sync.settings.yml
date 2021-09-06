@@ -1,0 +1,18 @@
+drupal:
+  user_cancel_method: user_cancel_block
+  user_id_field: name
+azure:
+  client_id: 'file://settings.local.php#$config[''azure_ad_delta_sync.settings''][''client_id'']'
+  client_secret: 'file://settings.local.php#$config[''azure_ad_delta_sync.settings''][''client_secret'']'
+  group_id: 'file://settings.local.php#$config[''azure_ad_delta_sync.settings''][''group_id'']'
+  tenant_id: 'file://settings.local.php#$config[''azure_ad_delta_sync.settings''][''tenant_id'']'
+  user_id_claim: userPrincipalName
+exclude:
+  roles:
+    administrator: administrator
+    editor: 0
+  users:
+    - '1'
+include:
+  modules:
+    openid_connect: openid_connect

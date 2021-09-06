@@ -1,5 +1,8 @@
 services:
-  fixtures.user_fixture:
-    class: Drupal\custom_fixtures\Fixture\UserFixture
+  Drupal\custom_fixtures\Fixture\RoleFixture:
+    tags:
+      - { name: content_fixture }
+
+  Drupal\custom_fixtures\Fixture\UserFixture:
     tags:
       - { name: content_fixture }
